@@ -15,7 +15,7 @@ import UserInfo from './components/register/UserInfo';
 // import MyWaitmate from './components/mypage/MyWaitmate';
 import Chat from './components/Chat/Chat';
 import cities from './static/cities';
-import Map from './components/map/mapTest';
+import Map from './components/map/mapTemp';
 
 function App() {
   return (
