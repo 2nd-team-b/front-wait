@@ -3,7 +3,7 @@ import Template from './static/Template';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProxyRegister from './components/proxy/ProxyRegister';
 import ProxyList from './components/proxy/ProxyList';
-import Main from './components/main/main';
+import Main from './components/main/mainTemp';
 import ProxyDetail from './components/proxy/ProxyDetail';
 import WaitMateRegister from './components/waitMate/WaitMateRegister';
 import WaitMateList from './components/waitMate/WaitMateList';
@@ -15,7 +15,7 @@ import UserInfo from './components/register/UserInfo';
 // import MyWaitmate from './components/mypage/MyWaitmate';
 import Chat from './components/Chat/Chat';
 import cities from './static/cities';
-import Map from './components/map/map';
+import Map from './components/map/mapTest';
 
 function App() {
   return (
