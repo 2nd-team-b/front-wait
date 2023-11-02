@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../main/main.css';
-import Footer from '../../static/Footer';
+import Footer from '../Footer'
 export default function Main() {
   useEffect(() => {
     AOS.init();
@@ -128,7 +128,7 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 }
