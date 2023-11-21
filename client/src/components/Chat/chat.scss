@@ -1,0 +1,201 @@
+@import '~include-media/dist/include-media';
+
+.avatar {
+  display: flex;
+  justify-content: flex-end;
+}
+img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.container {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 0.3rem;
+  height: 570px;
+  max-height: 80vh;
+  border: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+.input_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.rce-input-textarea {
+  margin: 0px 0.2rem 0px 0.2rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.rce-input-textarea:focus {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  outline-offset: 5px;
+}
+
+.me {
+  text-align: right;
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+  .rce-mbox-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .rce-avatar-container.default.default {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+  .rce-mbox-text {
+    background-color: #2f2772;
+    border-radius: 12px 0 12px 12px;
+    color: white;
+    display: inline;
+    padding: 4px 4px;
+  }
+}
+
+.other {
+  text-align: left;
+  margin-left: 0.5rem;
+  margin-top: 1.5rem;
+  .rce-avatar-container.default.default {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+  .rce-mbox-text {
+    background-color: #e8e8eb;
+    border-radius: 12px 12px 0px 12px;
+    color: black;
+    display: inline;
+    padding: 4px 4px;
+  }
+}
+
+.message_container {
+  min-height: 65vh;
+  max-height: 75vh;
+  overflow: auto;
+}
+
+.input_send_btn {
+  background-image: url('https://sesac-projects.site/waitmate/images/chatting_send_btn.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 44px;
+  height: 40px;
+}
+
+.container {
+  z-index: 1;
+  padding-bottom: 20px;
+}
+.waitMate_letter {
+  font-size: large;
+  color: #2f2772;
+  font-weight: bold;
+}
+.waitMate_letter_second {
+  font-size: large;
+  color: #b3e443;
+  font-weight: bold;
+}
+.waitMate_letter {
+  white-space: nowrap;
+}
+
+.waitMate_letter span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.waitMate_letter_second span {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.message_container {
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  @include media('<300px') {
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+.chat_header {
+  background-color: #2f2772;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  font-size: x-large;
+  @include media('<567px') {
+    padding: 0;
+    font-size: medium;
+  }
+  @include media('<300px') {
+    padding: 0;
+    font-size: medium;
+  }
+}
+.chat_header_status {
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-size: x-large;
+  padding: 10px;
+  @include media('<567px') {
+    padding: 0;
+    font-size: medium;
+  }
+  @include media('<300px') {
+    font-size: small;
+  }
+}
+
+.input_container {
+  box-shadow: 0px -2px 0px 0px rgba(140, 140, 140, 0.2);
+  .input_item {
+    .paymentButton {
+      background-image: url('https://sesac-projects.site/waitmate/images/pay.svg');
+      background-size: 30px 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #fffff8;
+      border: none;
+      width: 44px;
+      height: 40px;
+      color: #2f2772;
+      padding: 8px;
+
+      &:hover {
+        background-color: #2f2772;
+        border: 1px solid #2f2772;
+      }
+    }
+  }
+}
+
+.rce-button .paymentButton {
+  background-color: transparent;
+  border-color: none;
+}
